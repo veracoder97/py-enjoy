@@ -12,7 +12,7 @@ print("Bienvenido al contador de vocales.")
 nombre = input("Por favor, introduce tu nombre: ")
 
 # Pedir al usuario que introduzca la cadena de texto
-texto = input("Hola {}, por favor introduce una cadena de texto: ".format(nombre))
+txt = input("Hola {}, por favor introduce una cadena de texto: ".format(nombre))
 
 # Inicializar contadores para vocales abiertas y cerradas
 vocales_abiertas = 0
@@ -24,7 +24,7 @@ vocales_abiertas_list = ['a', 'e', 'o']
 vocales_cerradas_list = ['i', 'u']
 
 # Iterar sobre cada letra en el texto y contar las vocales
-for letra in texto:
+for letra in txt:
     if letra.lower() in vocales_abiertas_list:
         vocales_abiertas += 1
     elif letra.lower() in vocales_cerradas_list:
@@ -34,7 +34,7 @@ for letra in texto:
 
 # Mostrar los resultados
 print("\nNombre: ", (nombre))
-print("Este es el texto introducido: ", (texto))
+print("Este es el texto introducido: ", (txt))
 print("Número de vocales abiertas: ", (vocales_abiertas))
 print("Número de vocales cerradas: ", (vocales_cerradas))
 print("Número de vocales toales : ", (vocales_totales))
